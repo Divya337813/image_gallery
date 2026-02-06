@@ -2,52 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image Gallery</title>
+    <title>My Image Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             text-align: center;
         }
-
-        h1 {
-            margin: 20px 0;
-        }
-
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             padding: 20px;
-            max-width: 900px;
-            margin: auto;
         }
-
-        .gallery img {
+        img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
             border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
 
-    <h1>My Image Gallery</h1>
+<h1>My Image Gallery</h1>
 
-    <div class="gallery">
-        <img src="img1.jpg" alt="Image 1">
-        <img src="img2.jpg" alt="Image 2">
-        <img src="img3.jpg" alt="Image 3">
-        <img src="img4.jpg" alt="Image 4">
-    </div>
+<div class="gallery">
+    <img src="gallery/img1.jpg" alt="Image 1">
+    <img src="gallery/img2.jpg" alt="Image 2">
+    <img src="gallery/img3.jpg" alt="Image 3">
+    <img src="gallery/img4.jpg" alt="Image 4">
+</div>
 
 </body>
-
 </html>
